@@ -1,0 +1,31 @@
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+.streamlit/secrets.toml
+
+# Secret and credential files
+secrets/
+secret/
+*secret*
+*credentials*
+*service-account*.json
+
+# Private keys and keystores
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Local Python environment and generated cache
+.venv/
+__pycache__/
+*.py[cod]
+*.pkl
+*.pickle
+
+# Source dataset is not needed at runtime; recommendation artifacts are tracked separately
+*.movies_metadata.csv
